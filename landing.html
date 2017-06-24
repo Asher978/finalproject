@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York City Rescue Mission</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="landing.css">
+</head>
+<body onload="Move()">
+
+<div class=conatiner>
+
+	<div class="page">
+		<video class="logo" autoplay loop>
+			<source src="mainvideo.mp4" type="video/mp4">
+			<source src="mainvideo.webm" type="video/webm">
+		</video>
+		
+	
+
+		<a href="learn.html"><img id="pic" src="navbarlogo.png"></a>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	var elem1 = document.getElementById("pic");
+	
+
+function Move(){
+	var posY = -800;
+	var id = setInterval(frame, 1);
+	function frame(){
+		if(posY == 5){
+			clearInterval(id);
+		} else {
+			posY+=1;
+			elem1.style.top = posY + "px";
+			console.log('hi')
+		}
+	}
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>New York City Rescue Mission</title>
+	<link rel="stylesheet" href="learn.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="autoSlide()">
+	<div id="container">
+		<!-- START OF THE NAV BAR -->
+		<img id="navlogo" src="navbarlogo.png">
+		<header>
+			<nav role="navigation">
+				<ul>
+					<li>
+						<a href="homelessness.html">
+							<div>
+								Homelessness
+								<span>there's no place like home</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="landing.html">
+							<div>
+								Learn
+								<span>your efforts count</span>
+							</div>
+						</a><div>
+							<ul>
+								<li><a href="story.html">Our Story</a></li>
+								<li><a href="programs.html">Programs</a></li>
+								<li><a href="team.html">Our Team</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div>
+								Serve
+								<span>give us a hand</span>
+							</div>
+						</a><div>
+							<ul>
+								<li><a href="#">Help Us Serve</a></li>
+								<li><a href="donate.html">Donate</a></li>
+								<li><a href="#">Join Our Team</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="donate.html">
+							<div>
+								Donate
+								<span>it starts with you</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- END OF THE NAV BAR -->
+		
+		<div id="banner">
+			<a id="test1" class="back-button right" onclick="itirator=-1;plusDivs()">&#10094;</a>
+			<a id="test2" class="forward-button left" onclick="plusDivs()">&#10095;</a>
+			<img class="mySlides" src="bannerF.jpg">
+			<img class="mySlides" src="bannerE.jpg">
+			<img class="mySlides" src="bannerG.jpg">
+			<img class="mySlides" src="group.jpg">
+			<img class="mySlides" src="donate.jpg">
+			<img class="mySlides" src="rebuild.png">
+			<img class="mySlides" src="hope.jpg">
+
+			<!-- <iframe width="100%" height="560" src="mainvideo.mp4" frameborder="0" fullscreen></iframe> -->
+		</div>
+		<div id="content">
+			<h2>HOPE</h2>
+			<h3>LIVES HERE</h3>
+			<!-- <img height="300px" width="300px" src="bannerB.jpg"> -->
+		</div>
+		<div id="content1">
+			<div class="row1">
+				<a class="one hov"  href="programs.html"><p>Meals</p></a>
+				<a class="two hov" href="programs.html"><p>Shelter</p></a>
+				<a class="three hov" href="programs.html"><p>Medical</p></a>
+			</div>
+			<div class="rowA">
+				<img class="icon" src="meal.jpg">
+				<img class="icon" src="shelt.jpg">
+				<img class="icon" src="med.jpg">
+			</div>
+			<div class="row2">
+				<a class="four hov" href="programs.html"><p>Learning<br>Center</p></a>
+				<a class="five hov" href="programs.html"><p>Clothing<br>Closet</p></a>
+				<a class="six hov" href="programs.html"><p>Thrive</p></a>
+			</div>
+			<div class="rowB">
+				<img class="icon" src="learn.jpg">
+				<img class="icon" src="cloth.jpg">
+				<img class="icon" src="thirve.jpg">
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,187 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+body{
+	position: relative;
+	font-family: helvetica;
+	font-size: 16px;
+	height: 1800px;
+	/*background:#F8EEE7;*/
+}
+#navlogo{
+	position: fixed;
+	margin-top: 10px;
+	opacity: 0.8;
+	z-index: 999;
+}
+#banner{
+	width: 80%;
+	height: 1600px;
+	position: relative;
+	/*padding: 10%;*/
+	padding-top: 5%;
+	top: 85px;
+	margin: 0 auto;
+	background-color: rgba(136, 127, 145, 0.67); /*rgba(49, 17, 81, 0.87);*/
+	box-shadow: 0px 10px 50px 10px #888888;
+}
+.banner-logo{
+	width:80%;
+	height: 460px;
+	margin-left: 120px;
+	filter: grayscale(100%);
+	box-shadow: 0px 10px 50px 10px #888888;
+}
+.banner-logo:hover{
+	filter: grayscale(0%);
+	transition: linear 1.5s;
+}
+#banner h1{
+	margin-left: 150px;
+	color:white;
+	padding:2%;
+}
+.contentA{
+	display: flex;
+	width:100%;
+	padding-top:1%;
+}
+.meal{
+	flex:3;
+	width:280px;
+	height:295px;
+	margin:2%;
+	/*border-radius: 10px;*/
+	box-shadow: 10px 10px 5px #888888;
+	transform: perspective(300px) rotateY(5deg);
+}
+.pA{
+	background-image: url('meals.jpg');
+}
+.pB{
+	background-image: url('shelter.jpg');
+}
+.pC{
+	background-image: url('medical.jpg');
+}
+.pD{
+	background-image: url('learning.jpg');
+}
+.pE{
+	background-image: url('clothing.jpg');	
+}
+.pF{
+	background-image: url('learning.jpg');
+}
+.meal p{
+	color:white;
+	margin-left: 30px;
+	margin-top: 140px;
+	font-size: 40px;
+}
+.text{
+	flex:4;
+	margin:2%;
+	line-height: 20pt;
+	word-spacing: .30rem;
+	color:white;
+	text-align: justify;
+}
+.text span{
+	font-weight: bold;
+	font-size: 30px;
+}
+/*START OF NAV BAR STYLING*/
+header {
+	background: /*#FFCE00;*/rgba(46, 8, 84, 0.67);
+	border-bottom: 1px solid rgba(0,0,0,0.7);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.7);
+	display: block;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+header > nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+header > nav > ul > li {
+	flex: 0 1 auto;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	transition: all linear 0.2s;	
+}		
+header > nav > ul > li:hover {
+	background: rgba(49, 17, 81, 0.87); 
+}			
+header > nav > ul > li a + div {
+	background: rgba(49, 17, 81, 0.87); 
+	border-radius: 0 0 2px 2px;
+	display: none;
+	font-size: 1rem;
+	position: absolute;
+	width: 195px;
+}			
+header > nav > ul > li:hover a + div {
+	display: block;
+}				
+header > nav > ul > li a + div > ul {
+	list-style-type: none;	
+}				
+header > nav > ul > li a + div > ul > li {
+	margin: 0;
+	padding: 5%;
+}					
+header > nav > ul > li a + div > ul > li > a {
+	color: rgba(255,255,255,.9);
+	display: block;	
+	font-size: .75rem;
+	letter-spacing: 1.5px;
+	padding: 5%; 
+	text-decoration: none;
+	text-transform: uppercase;
+}						
+header > nav > ul > li a + div > ul > li:hover > a {
+	background-color: rgba(0,0,0,.15);	
+}
+header > nav > ul > li > a {
+	align-items: flex-start;
+	color: #fff;
+	display: flex;
+	font-size: 1.55rem;
+	font-weight: 200;
+	letter-spacing: 1px;
+	max-width: 130px;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.1);
+	transition: all linear 0.1s;
+}		
+header > nav > ul > li > a > div > span {
+	color: rgba(255,255,255,.75);
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .9rem;	
+	font-style: italic;
+	line-height: 1rem;
+	max-width: 260px;
+}
+@media (min-width: 990px) {
+  header > nav > ul > li > a {
+    max-width: 500px;
+    font-size: 1.7rem;
+    font-weight: bold;
+	line-height: 2rem;
+	}
+	header > nav > ul > li > a > div > span {
+	  margin: 4px 0 0;  
+  	}
+}
+/*END OF NAV BAR STYLING*/

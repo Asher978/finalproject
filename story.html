@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Story</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="story.css">
+</head>
+<body onload="Move()">
+	<div id="container">
+		<!-- START OF THE NAV BAR -->
+		<img id="navlogo" src="navbarlogo.png">
+		<header>
+			<nav role="navigation">
+				<ul>
+					<li>
+						<a href="homelessness.html">
+							<div>
+								Homelessness
+								<span>there's no place like home</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="landing.html">
+							<div>
+								Learn
+								<span>your efforts count</span>
+							</div>
+						</a><div>
+							<ul>
+								<li><a href="story.html">Our Story</a></li>
+								<li><a href="programs.html">Programs</a></li>
+								<li><a href="team.html">Our Team</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div>
+								Serve
+								<span>give us a hand</span>
+							</div>
+						</a><div>
+							<ul>
+								<li><a href="#">Help Us Serve</a></li>
+								<li><a href="#">Donate</a></li>
+								<li><a href="#">Join Our Team</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div>
+								Donate
+								<span>it starts with you</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- END OF THE NAV BAR -->
+		<div class="content">
+			<img class="bglogo" src="storyBG.jpg">	
+			<h1 id="box1">Our foundation is:</h1>
+			<h2 id="boxA">HOPE</h2>
+			<h1 id="box2">Our spirit is:</h1>
+			<h2 id="boxB">LOVE</h2>
+			<h1 id="box3">Our character is:</h1>
+			<h2 id="boxC">EXCELLENCE</h2>
+			<h1 id="box4">Our attitude is:</h1>
+			<h2 id="boxD">COMMUNITY</h2>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var elem1 = document.getElementById("box1");
+	var elem2 = document.getElementById("boxA");
+	var elem3 = document.getElementById("box2");
+	var elem4 = document.getElementById("boxB");
+	var elem5 = document.getElementById("box3");
+	var elem6 = document.getElementById("boxC");
+	var elem7 = document.getElementById("box4");
+	var elem8 = document.getElementById("boxD");
+	
+	Move(elem1, -300, 120);
+
+	setTimeout(function(){
+  	Move(elem2, -300, 140);
+	}, 700);
+	
+	setTimeout(function(){
+  	Move(elem3, -300, 160);
+	}, 1600);
+	
+	setTimeout(function(){
+  	Move(elem4, -300, 180);
+	}, 2500);
+	
+	setTimeout(function(){
+  	Move(elem5, -300, 200);
+	}, 3500);
+	
+	setTimeout(function(){
+  	Move(elem6, -300, 220);
+	}, 4500);
+	
+	setTimeout(function(){
+  	Move(elem7, -300, 240);
+	}, 5500);
+	
+	setTimeout(function(){
+  	Move(elem8, -300, 260);
+	}, 6500);
+
+	function Move(element, startP, endP){
+		var posY = startP;
+		var id = setInterval(frame, 1);
+		function frame(){
+			if(posY == endP) {
+				// clearInterval(id);
+			} else {
+				posY+=2;
+				element.style.top = posY + "px";
+			}
+		}
+
+	}
+
+// function Move(){
+// 	var posY = -300;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 30){
+// 			clearInterval(id);
+// 			func_elem2(posY)
+// 		} else {
+// 			posY+=2;
+// 			elem1.style.top = posY + "px"
+// 			console.log('hi')
+// 		}
+// 	}
+// }
+// function func_elem2(posY){
+// 	posY = -300;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 40) {
+// 			clearInterval(id);
+// 			func_elem3(posY)
+// 		} else{
+// 			posY+=2;
+// 			elem2.style.top = posY + "px";
+// 		}
+// 	}
+// }
+// function func_elem3(posY){
+// 	posY = -300;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 60) {
+// 			clearInterval(id);
+// 			func_elem4(posY)
+// 		} else{
+// 			posY+=2;
+// 			elem3.style.top = posY + "px";
+// 		}
+// 	}
+// }
+// function func_elem4(posY){
+// 	posY = -300;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 60) {
+// 			clearInterval(id);
+// 			func_elem5(posY)
+// 		} else{
+// 			posY+=2;
+// 			elem4.style.top = posY + "px";
+// 		}
+// 	}
+// }
+// function func_elem5(posY){
+// 	posY = -300;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 90) {
+// 			clearInterval(id);
+// 			func_elem6(posY)
+// 		} else{
+// 			posY+=2;
+// 			elem5.style.top = posY + "px";
+// 		}
+// 	}
+// }
+// function func_elem6(posY){
+// 	posY = -500;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 90) {
+// 			clearInterval(id);
+// 			func_elem7(posY)
+// 		} else{
+// 			posY+=2;
+// 			elem6.style.top = posY + "px";
+// 		}
+// 	}
+// }
+// function func_elem7(posY){
+// 	posY = -300;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 110) {
+// 			clearInterval(id);
+// 			func_elem8(posY)
+// 		} else{
+// 			posY+=2;
+// 			elem7.style.top = posY + "px";
+// 		}
+// 	}
+// }
+// function func_elem8(posY){
+// 	posY = -700;
+// 	var id = setInterval(frame, 1);
+// 	function frame(){
+// 		if(posY == 100) {
+// 			clearInterval(id);
+// 		} else{
+// 			posY+=2;
+// 			elem8.style.top = posY + "px";
+// 		}
+// 	}
+// }
+
+
+</script>
+</html>
